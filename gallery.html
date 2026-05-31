@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boomb6's Storage — Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="gallery">
+  <header class="site-header">
+    <nav class="nav-inner">
+      <a href="index.html" class="site-logo" data-i18n="site.name">Boomb6's Storage</a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-page="home" data-i18n="nav.home">首页</a></li>
+        <li><a href="voicebank.html" data-page="voicebank" data-i18n="nav.voicebank">音源</a></li>
+        <li><a href="gallery.html" data-page="gallery" data-i18n="nav.gallery">立绘</a></li>
+        <li><a href="videos.html" data-page="videos" data-i18n="nav.videos">视频</a></li>
+        <li><a href="merch.html" data-page="merch" data-i18n="nav.merch">周边</a></li>
+        <!-- 【新增】补全了缺失的日志导航 -->
+        <li><a href="blog.html" data-page="blog" data-i18n="nav.blog">日志</a></li>
+      </ul>
+      <div class="lang-switcher">
+        <button type="button" data-lang="zh" class="active">中</button>
+        <button type="button" data-lang="ja">日</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title" data-i18n="gallery.title">立绘展示</h1>
+    <p class="page-desc" data-i18n="gallery.desc">我的 OC 立绘与插画作品。</p>
+
+    <div class="gallery-stack">
+      <figure class="gallery-item">
+        <figcaption data-i18n="gallery.item1">标准立绘</figcaption>
+        <div class="gallery-figure-media">
+          <img src="assets/images/gallery-01.png" alt=""
+               data-lightbox="assets/images/gallery-01.png" loading="lazy"
+               onerror="this.classList.add('is-broken'); this.removeAttribute('src');">
+        </div>
+      </figure>
+      <figure class="gallery-item">
+        <figcaption data-i18n="gallery.item2">角色设定</figcaption>
+        <div class="gallery-figure-media">
+          <img src="assets/images/gallery-02.png" alt=""
+               data-lightbox="assets/images/gallery-02.png" loading="lazy"
+               onerror="this.classList.add('is-broken'); this.removeAttribute('src');">
+        </div>
+      </figure>
+      <figure class="gallery-item">
+        <figcaption data-i18n="gallery.item3">Q 版头像</figcaption>
+        <div class="gallery-figure-media">
+          <img src="assets/images/gallery-03.png" alt=""
+               data-lightbox="assets/images/gallery-03.png" loading="lazy"
+               onerror="this.classList.add('is-broken'); this.removeAttribute('src');">
+        </div>
+      </figure>
+    </div>
+  </main>
+
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+    <button type="button" class="lightbox-close" aria-label="Close">&times;</button>
+    <img src="" alt="">
+  </div>
+
+  <footer class="site-footer">
+    <p data-i18n="footer">© Boomb6 · OC 个人站</p>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

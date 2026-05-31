@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日志 - Boomb6's Storage</title>
+    <!-- 确保 css/style.css 路径正确 -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="blog">
+    <header class="site-header">
+        <nav class="nav-inner">
+            <!-- 网站Logo/名称 -->
+            <a href="index.html" class="site-logo" data-i18n="site.name">Boomb6's Storage</a>
+
+            <!-- 导航栏链接 -->
+            <ul class="nav-links">
+                <li><a href="index.html" data-page="home" data-i18n="nav.home">首页</a></li>
+                <li><a href="voicebank.html" data-page="voicebank" data-i18n="nav.voicebank">音源</a></li>
+                <li><a href="gallery.html" data-page="gallery" data-i18n="nav.gallery">立绘</a></li>
+                <li><a href="videos.html" data-page="videos" data-i18n="nav.videos">视频</a></li>
+                <li><a href="merch.html" data-page="merch" data-i18n="nav.merch">周边</a></li>
+                <li><a href="blog.html" data-page="blog" data-i18n="nav.blog">日志</a></li>
+            </ul>
+
+            <!-- 语言切换按钮 -->
+            <div class="lang-switcher" aria-label="Language">
+                <button type="button" data-lang="zh" class="active">中</button>
+                <button type="button" data-lang="ja">日</button>
+                <button type="button" data-lang="en">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 使用 blog-container 容器，配合下方的 CSS 样式 -->
+    <main class="blog-container">
+        <!-- 页面标题和描述 -->
+        <h1 class="page-title" data-i18n="blog.title">开发日志</h1>
+        <p class="page-desc" data-i18n="blog.desc">记录我的创作</p>
+
+        <!-- 第一篇日志（最新，带图片） -->
+        <article class="blog-post">
+            <header class="post-header">
+                <h2 class="post-title">🎉 建站第一天：Boomb6's Storage 正式上线！</h2>
+                <time class="post-date" datetime="2026-05-30">2026年5月30日</time>
+            </header>
+            
+            <!-- 新闻配图（记得把图片放入 assets/images/ 文件夹） -->
+            <figure class="post-image">
+                <img src="assets/images/blog-01.jpg" alt="建站庆祝插画" loading="lazy" onerror="this.style.display='none'">
+                <figcaption></figcaption>
+            </figure>
+            
+            <div class="post-content">
+                <p class="post-lead">今天终于把 Boomb6's Storage 的框架搭好了！使用了橙色和灰色的日系简约风格。</p>
+                <p>！</p>
+            </div>
+        </article>
+
+        <!-- 分割线 -->
+        <hr class="post-divider">
+
+        <!-- 第二篇日志（纯文字） -->
+        <article class="blog-post">
+            <header class="post-header">
+                <h2 class="post-title">🛠️ 设计调整与优化</h2>
+                <time class="post-date" datetime="2026-05-28">2026年5月28日</time>
+            </header>
+            <div class="post-content">
+                <p>调整了导航栏的配色，增加了响应式布局的支持，确保手机端也能正常浏览。</p>
+                <p>修复了部分页面导航栏缺失的问题，现在所有页面都能正常切换语言了。</p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer class="site-footer">
+        <p data-i18n="footer">© Boomb6 · OC 个人站</p>
+    </footer>
+
+    <!-- 确保 JS 文件路径正确（去掉了不存在的 config.js） -->
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

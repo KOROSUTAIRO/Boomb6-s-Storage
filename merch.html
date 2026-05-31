@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boomb6's Storage — Merch</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="merch">
+  <header class="site-header">
+    <nav class="nav-inner">
+      <a href="index.html" class="site-logo" data-i18n="site.name">Boomb6's Storage</a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-page="home" data-i18n="nav.home">首页</a></li>
+        <li><a href="voicebank.html" data-page="voicebank" data-i18n="nav.voicebank">音源</a></li>
+        <li><a href="gallery.html" data-page="gallery" data-i18n="nav.gallery">立绘</a></li>
+        <li><a href="videos.html" data-page="videos" data-i18n="nav.videos">视频</a></li>
+        <li><a href="merch.html" data-page="merch" data-i18n="nav.merch">周边</a></li>
+        <!-- 【新增】补全了缺失的日志导航 -->
+        <li><a href="blog.html" data-page="blog" data-i18n="nav.blog">日志</a></li>
+      </ul>
+      <div class="lang-switcher">
+        <button type="button" data-lang="zh" class="active">中</button>
+        <button type="button" data-lang="ja">日</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title" data-i18n="merch.title">OC 周边</h1>
+    <p class="page-desc" data-i18n="merch.desc">为我的 OC 设计的周边产品展示。</p>
+
+    <div class="merch-grid">
+      <article class="merch-item">
+        <img src="assets/images/merch-01.png" alt=""
+             onerror="this.classList.add('placeholder-img');this.alt='Merch 1';">
+        <div class="merch-body">
+          <h3 data-i18n="merch.item1">亚克力立牌</h3>
+          <p data-i18n="merch.item1Desc">双面印刷 · 约 15cm</p>
+          <span class="merch-tag" data-i18n="merch.tag.display">展示用</span>
+        </div>
+      </article>
+      <article class="merch-item">
+        <img src="assets/images/merch-02.png" alt=""
+             onerror="this.classList.add('placeholder-img');this.alt='Merch 2';">
+        <div class="merch-body">
+          <h3 data-i18n="merch.item2">徽章套装</h3>
+          <p data-i18n="merch.item2Desc">58mm 马口铁徽章 ×3</p>
+          <span class="merch-tag" data-i18n="merch.tag.display">展示用</span>
+        </div>
+      </article>
+      <article class="merch-item">
+        <img src="assets/images/merch-03.png" alt=""
+             onerror="this.classList.add('placeholder-img');this.alt='Merch 3';">
+        <div class="merch-body">
+          <h3 data-i18n="merch.item3">明信片套组</h3>
+          <p data-i18n="merch.item3Desc">插画明信片 5 枚入</p>
+          <span class="merch-tag" data-i18n="merch.tag.display">展示用</span>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p data-i18n="footer">© Boomb6 · OC 个人站</p>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

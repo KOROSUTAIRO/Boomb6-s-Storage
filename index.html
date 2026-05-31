@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boomb6's Storage — Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- 1. 修改 body 标签，添加 class="has-bg" -->
+<body data-page="home" class="has-bg">
+    <!-- 导航栏 -->
+    <header class="site-header">
+        <nav class="nav-inner">
+            <a href="index.html" class="site-logo" data-i18n="site.name">Boomb6's Storage</a>
+            <ul class="nav-links">
+                <li><a href="index.html" data-page="home" data-i18n="nav.home">首页</a></li>
+                <li><a href="voicebank.html" data-page="voicebank" data-i18n="nav.voicebank">音源</a></li>
+                <li><a href="gallery.html" data-page="gallery" data-i18n="nav.gallery">立绘</a></li>
+                <li><a href="videos.html" data-page="videos" data-i18n="nav.videos">视频</a></li>
+                <li><a href="merch.html" data-page="merch" data-i18n="nav.merch">周边</a></li>
+                <li><a href="blog.html" data-page="blog" data-i18n="nav.blog">日志</a></li>
+            </ul>
+            <div class="lang-switcher" aria-label="Language">
+                <button type="button" data-lang="zh" class="active">中</button>
+                <button type="button" data-lang="ja">日</button>
+                <button type="button" data-lang="en">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主体内容 -->
+    <main class="main-home">
+        <!-- 2. 删除原有的背景图 div -->
+        <!-- <div class="home-bg" aria-hidden="true">
+            <img src="assets/images/home-bg.jpg" alt="">
+        </div> -->
+        
+        <section class="hero">
+            <div class="hero-content">
+                <img src="assets/images/avatar.png" alt="OC" class="hero-avatar" width="160" height="160" onerror="this.style.display='none'">
+                <h1 data-i18n="home.title">欢迎来到我的 OC 空间</h1>
+                <p data-i18n="home.subtitle">这里存放着我的原创角色资料、UTAU 音源、立绘、作品视频与周边展示。</p>
+                
+                <!-- 快捷入口 -->
+                <div class="quick-links">
+                    <a href="voicebank.html" class="quick-card">
+                        <div class="icon">♪</div>
+                        <h3 data-i18n="home.quick.voicebank">UTAU 音源</h3>
+                    </a>
+                    <a href="gallery.html" class="quick-card">
+                        <div class="icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="home.quick.gallery">立绘展示</h3>
+                    </a>
+                    <a href="videos.html" class="quick-card">
+                        <div class="icon">▶</div>
+                        <h3 data-i18n="home.quick.videos">视频作品</h3>
+                    </a>
+                    <a href="merch.html" class="quick-card">
+                        <div class="icon">◇</div>
+                        <h3 data-i18n="home.quick.merch">OC 周边</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p data-i18n="footer">© Boomb6 · OC 个人站</p>
+    </footer>
+
+    <!-- 脚本 -->
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

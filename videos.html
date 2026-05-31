@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boomb6's Storage — Videos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="videos">
+  <header class="site-header">
+    <nav class="nav-inner">
+      <a href="index.html" class="site-logo" data-i18n="site.name">Boomb6's Storage</a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-page="home" data-i18n="nav.home">首页</a></li>
+        <li><a href="voicebank.html" data-page="voicebank" data-i18n="nav.voicebank">音源</a></li>
+        <li><a href="gallery.html" data-page="gallery" data-i18n="nav.gallery">立绘</a></li>
+        <li><a href="videos.html" data-page="videos" data-i18n="nav.videos">视频</a></li>
+        <li><a href="merch.html" data-page="merch" data-i18n="nav.merch">周边</a></li>
+        <!-- 【新增】补全了缺失的日志导航 -->
+        <li><a href="blog.html" data-page="blog" data-i18n="nav.blog">日志</a></li>
+      </ul>
+      <div class="lang-switcher">
+        <button type="button" data-lang="zh" class="active">中</button>
+        <button type="button" data-lang="ja">日</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title" data-i18n="videos.title">视频作品</h1>
+    <p class="page-desc" data-i18n="videos.desc">我为 OC 制作或参与的视频。</p>
+
+    <div class="video-grid">
+      <!-- B站：把 BV1xxxxxxxx 换成你的 BV 号；YouTube 可用 https://www.youtube.com/embed/视频ID -->
+      <article class="video-item">
+        <div class="video-wrapper">
+          <iframe
+            src="https://player.bilibili.com/player.html?bvid=BV1xxxxxxxx&high_quality=1&danmaku=0"
+            title="Video 1"
+            allowfullscreen
+            scrolling="no"
+            frameborder="0"
+            loading="lazy"></iframe>
+        </div>
+        <div class="video-info">
+          <h3 data-i18n="videos.item1Title">角色介绍 PV</h3>
+          <p data-i18n="videos.item1Desc">OC 设定与展示</p>
+        </div>
+      </article>
+
+      <article class="video-item">
+        <div class="video-wrapper">
+          <!-- 方式二：本地视频 — 将文件放入 assets/video/demo.mp4 -->
+          <video controls preload="metadata" poster="assets/images/video-poster.png">
+            <source src="assets/video/demo.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-info">
+          <h3 data-i18n="videos.item2Title">UTAU 翻唱</h3>
+          <p data-i18n="videos.item2Desc">使用本音源的演唱作品</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p data-i18n="footer">© Boomb6 · OC 个人站</p>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

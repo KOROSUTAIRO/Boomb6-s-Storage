@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boomb6's Storage — Voicebank</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="voicebank">
+    <header class="site-header">
+        <nav class="nav-inner">
+            <a href="index.html" class="site-logo" data-i18n="site.name">Boomb6's Storage</a>
+            <ul class="nav-links">
+                <li><a href="index.html" data-page="home" data-i18n="nav.home">首页</a></li>
+                <li><a href="voicebank.html" data-page="voicebank" data-i18n="nav.voicebank">音源</a></li>
+                <li><a href="gallery.html" data-page="gallery" data-i18n="nav.gallery">立绘</a></li>
+                <li><a href="videos.html" data-page="videos" data-i18n="nav.videos">视频</a></li>
+                <li><a href="merch.html" data-page="merch" data-i18n="nav.merch">周边</a></li>
+                <li><a href="blog.html" data-page="blog" data-i18n="nav.blog">日志</a></li>
+            </ul>
+            <div class="lang-switcher">
+                <button type="button" data-lang="zh" class="active">中</button>
+                <button type="button" data-lang="ja">日</button>
+                <button type="button" data-lang="en">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title" data-i18n="voicebank.title">UTAU 音源</h1>
+        <p class="page-desc" data-i18n="voicebank.desc">SHINSHOKUNEKOROKU 的 UTAU 音源（JP）配布。试听后若喜欢，请下载完整压缩包。</p>
+        
+        <article class="card">
+            <div class="voicebank-info">
+                <img src="assets/images/voicebank-cover.png" alt="SHINSHOKUNEKOROKU" class="voicebank-cover" onerror="this.classList.add('placeholder-img'); this.alt='Cover';">
+                <div class="voicebank-meta">
+                    <h2 class="voicebank-char-name">SHINSHOKUNEKOROKU</h2>
+                    <dl>
+                        <dt data-i18n="voicebank.character">角色名</dt>
+                        <dd>SHINSHOKUNEKOROKU</dd>
+                        <dt data-i18n="voicebank.lang">对应语言</dt>
+                        <dd data-i18n="voicebank.langValue">JP</dd>
+                        <dt data-i18n="voicebank.author">作者</dt>
+                        <dd>Boomb6</dd>
+                        <dt data-i18n="voicebank.version">版本</dt>
+                        <dd>v1.Upd</dd>
+                        <dt data-i18n="voicebank.format">格式</dt>
+                        <dd>UTAU</dd>
+                    </dl>
+                    <div class="audio-preview">
+                        <label data-i18n="voicebank.preview">试听样本</label>
+                        <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.5rem;" data-i18n="voicebank.sampleName">示例曲目</p>
+                        <audio controls preload="metadata">
+                            <source src="assets/audio/preview.mp3" type="audio/mpeg">
+                            <source src="assets/audio/preview.ogg" type="audio/ogg">
+                            您的浏览器不支持音频播放。
+                        </audio>
+                    </div>
+                    
+                    <!-- 下载链接指向 Zoho，新标签页打开 -->
+                    <a id="voicebank-download" href="https://workdrive.zohopublic.com.cn/external/cf53db8691ddce9e8d62a4be9e76615b24b71b0ffb527a1a9a472c165bceaff0/download" class="btn-download" target="_blank">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7 10 12 15 17 10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        <span data-i18n="voicebank.download">下载音源 (.zip)</span>
+                    </a>
+                    
+                    <p class="usage-note" data-i18n="voicebank.usage">使用须知：请标注作者名 Boomb6；禁止用于商业用途；禁止二次配布。</p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <p data-i18n="footer">© Boomb6 · OC 个人站</p>
+    </footer>
+    
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+    <!-- ⚠️ 已移除 voicebank-download.js，它会覆盖下载链接为本地路径 -->
+</body>
+</html>
