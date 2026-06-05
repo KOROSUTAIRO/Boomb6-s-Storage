@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boomb6's Storage — Home</title>
+    <title>Boomb6's Storage</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230A0A12'/><line x1='4' y1='16' x2='10' y2='16' stroke='%23FF6B00' stroke-width='2'/><line x1='22' y1='16' x2='28' y2='16' stroke='%23FF6B00' stroke-width='2'/><line x1='16' y1='4' x2='16' y2='10' stroke='%23FF6B00' stroke-width='2'/><line x1='16' y1='22' x2='16' y2='28' stroke='%23FF6B00' stroke-width='2'/><circle cx='16' cy='16' r='5' fill='none' stroke='%23FF6B00' stroke-width='2'/><circle cx='16' cy='16' r='2' fill='%23FF6B00'/></svg>" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Share+Tech+Mono&family=Courier+New&family=Press+Start+2P&family=Noto+Sans+Mono+CJK+SC:wght@400;500;600;700&family=Noto+Sans+Mono+CJK+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<!-- 1. 修改 body 标签，添加 class="has-bg" -->
-<body data-page="home" class="has-bg">
-    <!-- 导航栏 -->
+<body data-page="home">
+    <div class="home-bg"></div>
     <header class="site-header">
         <nav class="nav-inner">
-            <a href="index.html" class="site-logo" data-i18n="site.name">Boomb6's Storage</a>
+            <a href="index.html" class="site-logo" data-i18n="site.name"><span class="logo-icon">★</span>Boomb6's Storage</a>
             <ul class="nav-links">
-                <li><a href="index.html" data-page="home" data-i18n="nav.home">首页</a></li>
-                <li><a href="voicebank.html" data-page="voicebank" data-i18n="nav.voicebank">音源</a></li>
-                <li><a href="gallery.html" data-page="gallery" data-i18n="nav.gallery">立绘</a></li>
-                <li><a href="videos.html" data-page="videos" data-i18n="nav.videos">视频</a></li>
-                <li><a href="merch.html" data-page="merch" data-i18n="nav.merch">周边</a></li>
-                <li><a href="blog.html" data-page="blog" data-i18n="nav.blog">日志</a></li>
+                <li><a href="index.html" data-page="home" data-i18n="nav.home">HOME</a></li>
+                <li><a href="voicebank.html" data-page="voicebank" data-i18n="nav.voicebank">VOICEBANK</a></li>
+                <li><a href="gallery.html" data-page="gallery" data-i18n="nav.gallery">GALLERY</a></li>
+                <li><a href="videos.html" data-page="videos" data-i18n="nav.videos">VIDEOS</a></li>
+                <li><a href="merch.html" data-page="merch" data-i18n="nav.merch">MERCH</a></li>
+                <li><a href="blog.html" data-page="blog" data-i18n="nav.blog">BLOG</a></li>
+                <li><a href="about.html" data-page="about" data-i18n="nav.about">ABOUT</a></li>
             </ul>
-            <div class="lang-switcher" aria-label="Language">
+            <div class="lang-switcher">
                 <button type="button" data-lang="zh" class="active">中</button>
                 <button type="button" data-lang="ja">日</button>
                 <button type="button" data-lang="en">EN</button>
@@ -28,51 +32,18 @@
         </nav>
     </header>
 
-    <!-- 主体内容 -->
     <main class="main-home">
-        <!-- 2. 删除原有的背景图 div -->
-        <!-- <div class="home-bg" aria-hidden="true">
-            <img src="assets/images/home-bg.jpg" alt="">
-        </div> -->
-        
         <section class="hero">
             <div class="hero-content">
-                <img src="assets/images/avatar.png" alt="OC" class="hero-avatar" width="160" height="160" onerror="this.style.display='none'">
-                <h1 data-i18n="home.title">欢迎来到我的 OC 空间</h1>
-                <p data-i18n="home.subtitle">这里存放着我的原创角色资料、UTAU 音源、立绘、作品视频与周边展示。</p>
-                
-                <!-- 快捷入口 -->
-                <div class="quick-links">
-                    <a href="voicebank.html" class="quick-card">
-                        <div class="icon">♪</div>
-                        <h3 data-i18n="home.quick.voicebank">UTAU 音源</h3>
-                    </a>
-                    <a href="gallery.html" class="quick-card">
-                        <div class="icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false">
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                            </svg>
-                        </div>
-                        <h3 data-i18n="home.quick.gallery">立绘展示</h3>
-                    </a>
-                    <a href="videos.html" class="quick-card">
-                        <div class="icon">▶</div>
-                        <h3 data-i18n="home.quick.videos">视频作品</h3>
-                    </a>
-                    <a href="merch.html" class="quick-card">
-                        <div class="icon">◇</div>
-                        <h3 data-i18n="home.quick.merch">OC 周边</h3>
-                    </a>
-                </div>
+                <h1 class="digital-title">WELCOME TO MY SPACE</h1>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <p data-i18n="footer">© Boomb6 · OC 个人站</p>
+        <p data-i18n="footer">© Boomb6 · OC个人站</p>
     </footer>
 
-    <!-- 脚本 -->
     <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
 </body>

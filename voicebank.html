@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boomb6's Storage — Voicebank</title>
+    <title>Boomb6's Storage - Voicebank</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230A0A12'/><line x1='4' y1='16' x2='10' y2='16' stroke='%23FF6B00' stroke-width='2'/><line x1='22' y1='16' x2='28' y2='16' stroke='%23FF6B00' stroke-width='2'/><line x1='16' y1='4' x2='16' y2='10' stroke='%23FF6B00' stroke-width='2'/><line x1='16' y1='22' x2='16' y2='28' stroke='%23FF6B00' stroke-width='2'/><circle cx='16' cy='16' r='5' fill='none' stroke='%23FF6B00' stroke-width='2'/><circle cx='16' cy='16' r='2' fill='%23FF6B00'/></svg>" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Share+Tech+Mono&family=Noto+Sans+Mono+CJK+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body data-page="voicebank">
@@ -11,12 +15,13 @@
         <nav class="nav-inner">
             <a href="index.html" class="site-logo" data-i18n="site.name">Boomb6's Storage</a>
             <ul class="nav-links">
-                <li><a href="index.html" data-page="home" data-i18n="nav.home">首页</a></li>
-                <li><a href="voicebank.html" data-page="voicebank" data-i18n="nav.voicebank">音源</a></li>
-                <li><a href="gallery.html" data-page="gallery" data-i18n="nav.gallery">立绘</a></li>
-                <li><a href="videos.html" data-page="videos" data-i18n="nav.videos">视频</a></li>
-                <li><a href="merch.html" data-page="merch" data-i18n="nav.merch">周边</a></li>
-                <li><a href="blog.html" data-page="blog" data-i18n="nav.blog">日志</a></li>
+                <li><a href="index.html" data-page="home" data-i18n="nav.home">HOME</a></li>
+                <li><a href="voicebank.html" data-page="voicebank" data-i18n="nav.voicebank">VOICEBANK</a></li>
+                <li><a href="gallery.html" data-page="gallery" data-i18n="nav.gallery">GALLERY</a></li>
+                <li><a href="videos.html" data-page="videos" data-i18n="nav.videos">VIDEOS</a></li>
+                <li><a href="merch.html" data-page="merch" data-i18n="nav.merch">MERCH</a></li>
+                <li><a href="blog.html" data-page="blog" data-i18n="nav.blog">BLOG</a></li>
+                <li><a href="about.html" data-page="about" data-i18n="nav.about">ABOUT</a></li>
             </ul>
             <div class="lang-switcher">
                 <button type="button" data-lang="zh" class="active">中</button>
@@ -26,59 +31,52 @@
         </nav>
     </header>
 
-    <main>
-        <h1 class="page-title" data-i18n="voicebank.title">UTAU 音源</h1>
-        <p class="page-desc" data-i18n="voicebank.desc">SHINSHOKUNEKOROKU 的 UTAU 音源（JP）配布。试听后若喜欢，请下载完整压缩包。</p>
-        
-        <article class="card">
-            <div class="voicebank-info">
-                <img src="assets/images/voicebank-cover.png" alt="SHINSHOKUNEKOROKU" class="voicebank-cover" onerror="this.classList.add('placeholder-img'); this.alt='Cover';">
-                <div class="voicebank-meta">
-                    <h2 class="voicebank-char-name">SHINSHOKUNEKOROKU</h2>
-                    <dl>
-                        <dt data-i18n="voicebank.character">角色名</dt>
-                        <dd>SHINSHOKUNEKOROKU</dd>
-                        <dt data-i18n="voicebank.lang">对应语言</dt>
-                        <dd data-i18n="voicebank.langValue">JP</dd>
-                        <dt data-i18n="voicebank.author">作者</dt>
-                        <dd>Boomb6</dd>
-                        <dt data-i18n="voicebank.version">版本</dt>
-                        <dd>v1.Upd</dd>
-                        <dt data-i18n="voicebank.format">格式</dt>
-                        <dd>UTAU</dd>
-                    </dl>
-                    <div class="audio-preview">
-                        <label data-i18n="voicebank.preview">试听样本</label>
-                        <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.5rem;" data-i18n="voicebank.sampleName">示例曲目</p>
-                        <audio controls preload="metadata">
-                            <source src="assets/audio/preview.mp3" type="audio/mpeg">
-                            <source src="assets/audio/preview.ogg" type="audio/ogg">
-                            您的浏览器不支持音频播放。
-                        </audio>
-                    </div>
-                    
-                    <!-- 下载链接指向 Zoho，新标签页打开 -->
-                    <a id="voicebank-download" href="https://workdrive.zohopublic.com.cn/external/63ad317c8b3935f6b5b09d61fb99a3177336735f1836fa07f7cfca847fafff02/download" class="btn-download" target="_blank">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                            <polyline points="7 10 12 15 17 10"/>
-                            <line x1="12" y1="15" x2="12" y2="3"/>
-                        </svg>
-                        <span data-i18n="voicebank.download">下载音源 (.zip)</span>
-                    </a>
-                    
-                    <p class="usage-note" data-i18n="voicebank.usage">使用须知：请标注作者名 Boomb6；禁止用于商业用途；禁止二次配布。</p>
+    <main class="main-container">
+        <h1 class="page-title" data-i18n="voicebank.title">UTAU 音源发布</h1>
+        <p class="page-desc" data-i18n="voicebank.desc">SHINSHOKUNEKOROKU 的 UTAU 音源（JP）适配页。试听后若喜欢，请下载完整压缩包。</p>
+
+        <div class="voicebank-info">
+            <img src="assets/images/character-shinshokunekoroku.png" alt="SHINSHOKUNEKOROKU" class="voicebank-avatar" onerror="this.style.display='none'">
+            <div class="voicebank-details">
+                <h2 class="voicebank-char-name">SHINSHOKUNEKOROKU</h2>
+                <dl>
+                    <dt data-i18n="voicebank.character">角色名</dt>
+                    <dd>SHINSHOKUNEKOROKU</dd>
+                    <dt data-i18n="voicebank.lang">对应语言</dt>
+                    <dd data-i18n="voicebank.langValue">JP</dd>
+                    <dt data-i18n="voicebank.author">作者</dt>
+                    <dd>Boomb6</dd>
+                    <dt data-i18n="voicebank.version">版本</dt>
+                    <dd>1.0</dd>
+                </dl>
+                
+                <div class="audio-player">
+                    <label data-i18n="voicebank.preview">试听样本</label>
+                    <audio controls>
+                        <source src="assets/audio/preview-shinshokunekoroku.mp3" type="audio/mpeg">
+                    </audio>
+                    <span data-i18n="voicebank.sampleName">示范曲目</span>
                 </div>
+                
+                <a href="https://workdrive.zohopublic.com.cn/external/63ad317c8b3935f6b5b09d61fb99a3177336735f1836fa07f7cfca847fafff02/download" class="btn-download" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                    <span data-i18n="voicebank.download">下载音源 (.zip)</span>
+                </a>
             </div>
-        </article>
+        </div>
+
+        <div class="usage-notice" data-i18n="voicebank.usage">使用须知：请标注作者名 Boomb6；禁止用于商业用途；禁止二次发布。</div>
     </main>
 
     <footer class="site-footer">
-        <p data-i18n="footer">© Boomb6 · OC 个人站</p>
+        <p data-i18n="footer">© Boomb6 · OC个人站</p>
     </footer>
-    
+
     <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
-    <!-- ⚠️ 已移除 voicebank-download.js，它会覆盖下载链接为本地路径 -->
 </body>
 </html>
